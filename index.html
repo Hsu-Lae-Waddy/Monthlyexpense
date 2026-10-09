@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1>Expense Tracker</h1>
+        <hr>
+    </nav>
+
+
+    <main class="container">
+
+        <!-- Financial Overview -->
+        <section class="card overview">
+
+            <h2>Financial Overview</h2>
+           
+
+            <div class="overview-grid">
+
+                <div class="info-box">
+                    <label for="monthly-income">
+                        Monthly Income
+                    </label>
+
+                    <input
+                        type="number"
+                        id="monthly-income"
+                        class="monthly-income"
+                        placeholder="0"
+                    >
+                </div>
+
+                <div class="info-box">
+                    <label for="extra-income">
+                        Extra Income
+                    </label>
+
+                    <input
+                        type="number"
+                        id="extra-income"
+                        class="extra-income"
+                        placeholder="0"
+                    >
+                </div>
+                <div id="buttonforenter">
+                <button id="update-income">
+        Update Income
+    </button></div>
+       <div class="info-box">
+                    <span>Total Income for this month:</span>
+                    <strong id="totalincomeforthismonth" >0</strong>
+                </div>
+            <hr>
+            </div>
+
+
+        </section>
+
+
+        <!-- Monthly Bills -->
+        <section class="card">
+
+            <h2>Monthly Expenses</h2>
+
+            <div class="expense-section">
+
+                <h3>Monthly Bills</h3>
+
+                <div class="expense-row">
+                    <label for="electricity">
+                        Electricity Bill
+                    </label>
+
+                    <input
+                        type="number"
+                        id="electricity"
+                        class="electricity"
+                        placeholder="0"
+                    >
+                </div>
+
+
+                <div class="expense-row">
+                    <label for="water">
+                        Water Bill
+                    </label>
+
+                    <input
+                        type="number"
+                        id="water"
+                        class="water"
+                        placeholder="0"
+                    >
+                </div>
+
+
+                <div class="expense-row">
+                    <label for="rent">
+                        House Rental Fee
+                    </label>
+
+                    <input
+                        type="number"
+                        id="rent"
+                        class="rent"
+                        placeholder="0"
+                    >
+                </div>
+
+            </div>
+            <div id="buttonforenter">
+                <button id="update-monthlybills">
+        Update Monthly Bills
+    </button></div>
+      <div class="info-box">
+                    <span>Total Monthly bills for this month:</span>
+                    <strong id="totalmonlthybillsforthismonth">0</strong>
+                </div>
+            <hr>
+
+        </section>
+
+
+        <!-- Shopping Expenses -->
+        <section class="card">
+
+            <h2>Shopping Expenses</h2>
+
+         
+<div class="expense-row"><label for="shopping-amount"> Shopping Amount </label> <input type="number" id="shopping-amount" placeholder="Enter amount" min="0" ></div>
+            <button id="add-expense">
+                Add More Shopping Expense
+            </button>
+        <p>or</p>
+        <button id="update-doshopping">
+                Update Total for buying Groceries 
+            </button>
+             <div class="info-box">
+                    <span>Total Grocery Expenses for this month:</span>
+                    <strong id="totalgroceryExpensesforthismonth">0</strong>
+                </div>
+            <hr>
+              
+
+        </section>
+
+
+        <!-- Expense List -->
+        <section class="card">
+
+            <h2>Recent Expenses</h2>
+
+            <div id="expense-list">
+
+                <p class="empty-message">
+                    No expenses added yet.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
